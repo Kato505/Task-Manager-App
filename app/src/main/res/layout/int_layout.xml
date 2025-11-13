@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="10dp"
     app:cardCornerRadius="12dp"
+    android:backgroundTint="#A289D3"
     android:elevation="28dp"
     android:layout_width="match_parent"
     android:layout_height="88dp">
@@ -51,6 +52,7 @@
             android:layout_height="wrap_content"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
             android:id="@+id/edit_btn"
             android:background="@drawable/circle_btn2"
             android:textSize="10sp"
@@ -63,6 +65,7 @@
             android:layout_height="25dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
             android:id="@+id/dlt_btn"
             android:background="@drawable/circle_btn"
             android:textSize="10sp"
