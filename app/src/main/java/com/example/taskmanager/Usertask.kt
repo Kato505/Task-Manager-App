@@ -39,7 +39,7 @@ class Usertask : AppCompatActivity() {
 
         dao=db.userDao()
 
-        if (intent.hasExtra(edit)){
+        if (intent.hasExtra(edit)) {
             binding.saveBtn.text = savechanges
             val data = intent.getParcelableExtra<Data>(edit)
             binding.apply {
@@ -48,10 +48,11 @@ class Usertask : AppCompatActivity() {
                 hk3.setText(data?.date)
                 id = data!!.id
             }
+        }
             binding.hk3.setOnClickListener {
                 showDatePicker()
             }
-        }
+
         binding.saveBtn.setOnClickListener {
             val title = binding.hk1.text.toString().trim()
             val description = binding.hk2.text.toString().trim()

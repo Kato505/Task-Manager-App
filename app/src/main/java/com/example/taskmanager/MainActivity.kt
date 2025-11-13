@@ -36,6 +36,10 @@ class MainActivity : AppCompatActivity(), infoAdapter.handleclicks {
             startActivity(anything)
         }
     }
+    override fun onResume() {
+        super.onResume()
+        showview()
+    }
 
     private fun showview() {
         dao.getAllUser().apply {
@@ -54,4 +58,7 @@ class MainActivity : AppCompatActivity(), infoAdapter.handleclicks {
         dao.delete(data)
         showview()
     }
+
 }
+
+
